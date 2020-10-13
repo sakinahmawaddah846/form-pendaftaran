@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style-form.css">
-    <title>Membuat Desain Form Pendaftaran Responsive HTML dan CSS</title>
+    <title>Membuat Desain Form Pendaftaran Sederhana</title>
   </head>
   <body>
     <div class="container">
       <div id="header">
         <img src="logo.png">
         <h1>Form Pendaftaran</h1>
-        <p>Silakan isi form secara lengkap</p>
+        <p>Silahkan isi form secara lengkap</p>
       </div>
 
       <div class="form-container" style="top: 100px;left: 200px;margin-top: 30px;border-top-width: 10px;border-left-width: 10px;border-right-width: 10px;padding-top: 40px;width: 900px;height: 1200px;">
         <form action="action.php" method="post" autocomplete="on" id="form1">
           <fieldset>
-          <legend>Informasi Primer</legend>
+          <legend>Formulir Pendaftaran</legend>
           <div class="form-grup">
             <div class="label">
               <label>Nama Lengkap</label>
             </div>
             <div class="input">
-              <input type="text" name="nama" placeholder="Isikan nama lengkap Anda" maxlength="20" autofocus style="width: 300px;height: 100px;">
+              <input type="text" name="nama" placeholder="Nama Lengkap" maxlength="20" autofocus style="width: 300px;height: 100px;">
             </div>
           </div>
           <div class="form-grup">
@@ -50,8 +50,10 @@
             <div class="input">
               <select name="kota">
                 <option value="malang" selected>Malang</option>
-                <option value="ponorogo" selected>Ponorogo</option>
+                <option value="lamongan" selected>Lamongan</option>
                 <option value="surabaya" selected>Surabaya</option>
+                <option value="gresik" selected>Gresik</option>
+                <option value="situbondo" selected>Situbondo</option>
               </select>
             </div>
           </div>
@@ -69,13 +71,13 @@
 
 
           <fieldset>
-          <legend>Informasi Sekunder</legend>
+          <legend>Informasi Pendaftaran</legend>
           <div class="form-grup">
             <div class="label">
-              <label>Alamat</label>
+              <label>Alamat Asal</label>
             </div>
             <div class="input">
-              <textarea name="alamat" placeholder="Isi alamat lengkap Anda" rows="6"></textarea>
+              <textarea name="alamat asal" placeholder="Isi alamat lengkap Anda" rows="6"></textarea>
             </div>
           </div>
           <div class="form-grup">
@@ -106,10 +108,10 @@
           </div>
           <div class="form-grup">
             <div class="label">
-              <label>Jumlah Anak</label>
+              <label>Jumlah Saudara</label>
             </div>
             <div class="input">
-              <input type="number" name="anak" value="0" min="0" max="10">
+              <input type="number" name="saudara" value="0" min="0" max="10">
             </div>
           </div>
           <div class="form-grup">
